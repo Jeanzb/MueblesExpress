@@ -11,12 +11,11 @@ div {
         }
       }
 }
-
+//mixin
 footer {
     nav {
         a {
-            font-weight: 400;
-            font-style: unset;
+            @include font-style(400, unset)        
         }
     }
 }

@@ -12,6 +12,13 @@ $success: $verde;
 
 $display-font-weight: 700;
 
+//mixin
+
+@mixin font-style($fw, $fs ) {
+    font-weight: $fw;
+    font-style: $fs;
+}
+
 
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
