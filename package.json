@@ -4,12 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compilar:sass": "sass --watch src/scss:build/css"
+    "compilar:sass": "sass --watch src/scss:build/css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Jeanzb",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeanzb/MueblesExpress.github.io.git/issues"
+  },
+  "homepage": "https://Jeanzb.github.io./MueblesExpress.github.io",
   "devDependencies": {
     "bootstrap": "^5.2.3",
     "sass": "^1.61.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
