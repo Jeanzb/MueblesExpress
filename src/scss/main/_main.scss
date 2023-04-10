@@ -1,0 +1,66 @@
+@use '../custom' as *;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.hero {
+        background-image: url('../../img/principal.jpg');
+        height: 25rem;
+        background-size: cover;
+        background-position: center center;
+        }
+         @include media-breakpoint-up(md) {
+            .hero {
+                    height: 55rem;
+            }
+    } 
+
+     /* Productos */
+
+    @include media-breakpoint-up(md) {
+        .producto {
+            img {
+                height: 45rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            
+        }
+    }
+
+    .categoria {
+        img:hover {
+            transform: scale(1.2);
+            
+        }
+    }
+
+    .categoria  {
+        img{
+            transition-property: transform;
+            transition-duration: 300ms;
+        }
+    }
+
+    .overflow-hidden {
+        img {
+            object-fit: cover;
+            
+        }
+    }
+    
+
+    .galeria {
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .precio {
+        color: white;
+    }

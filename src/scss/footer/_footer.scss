@@ -1,0 +1,30 @@
+@use '../custom' as *;
+
+div {
+    .hover-effect {
+        .text-dark {
+          font-weight: normal; 
+          transition: font-weight 0.3s ease; 
+          &:hover {
+            font-weight: bold; 
+          }
+        }
+      }
+}
+
+footer {
+    nav {
+        a {
+            font-weight: 400;
+            font-style: unset;
+        }
+    }
+}
+
+div {
+    
+    .fst-italic {
+        font-family: 'Playfair Display', serif;
+    }
+
+}

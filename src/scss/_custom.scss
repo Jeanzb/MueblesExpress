@@ -1,0 +1,18 @@
+// reescribir variales de bootstrap
+$azul: #0064c9 ;
+$verde: #1cc64c;
+
+//asignaciones de colores a BS
+
+$primary: $azul;
+$success: $verde;
+
+
+//tipografia
+
+$display-font-weight: 700;
+
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+
